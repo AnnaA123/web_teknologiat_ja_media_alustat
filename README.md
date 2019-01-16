@@ -1,1 +1,1 @@
-# web_teknologiat_ja_media-alustat
+# web-teknologiat_ja_media-alustat
