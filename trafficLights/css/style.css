@@ -123,6 +123,7 @@ div.green:active {background-color: green;
     margin: 10px;
     position: fixed;
     top: 80%;
+    font-family: "American Typewriter";
 }
 
 .hill1 {
@@ -148,25 +149,3 @@ div.green:active {background-color: green;
     border-top-left-radius: 2000px 500px;
 
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
