@@ -1,0 +1,172 @@
+body {
+    background-image: linear-gradient(#1687ED, #DBE2A9);
+    background-repeat: no-repeat;
+    height: 1000px;
+    margin: unset;
+}
+
+
+/*============================================ Traffic lights ============================================*/
+
+.trafficLights {
+    width: 184px;
+    position: fixed;
+    left: 70%;
+    top: 5%;
+
+}
+
+.lights {
+    width: 150px;
+    height: 380px;
+    padding: 10px;
+    background: black;
+    border: 7px solid grey;
+    border-radius: 10px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+
+.light {
+    width: 100px;
+    height: 100px;
+    border-radius: 50px;
+    margin: auto;
+    -moz-box-shadow:    inset 0 0 10px black;
+    -webkit-box-shadow: inset 0 0 10px black;
+    box-shadow:         inset 0 0 10px black;
+}
+
+div.light:hover {
+    background-color: black;
+    background-image: radial-gradient(black, transparent);
+    -moz-box-shadow:    inset 0 0 10px grey;
+    -webkit-box-shadow: inset 0 0 10px grey;
+    box-shadow:         inset 0 0 10px grey;
+}
+
+.red {
+    background-color: red;
+    background-image: radial-gradient(brown, transparent);
+}
+
+div.red:active {
+    background-color: red;
+    background-image: radial-gradient(brown, transparent);
+}
+
+.yellow {
+    background-color: yellow;
+    background-image: radial-gradient(orange, transparent);
+}
+
+div.yellow:active {
+    background-color: yellow;
+    background-image: radial-gradient(orange, transparent);
+}
+
+.green {background-color: green;
+    background-image: radial-gradient(lime, transparent);
+}
+
+div.green:active {background-color: green;
+    background-image: radial-gradient(lime, transparent);
+}
+
+
+.pole {
+    height: 350px;
+    width: 40px;
+    background-color: black;
+    margin-left: auto;
+    margin-right: auto;
+
+}
+
+/*============================================ Background ============================================*/
+
+.sun {
+    width: 150px;
+    height: 150px;
+    border-radius: 75px;
+    position: fixed;
+    bottom: 50%;
+    left: 50%;
+    right: 50%;
+    background-color: orange;
+    background-image: radial-gradient(yellow, transparent);
+    z-index: -1;
+
+}
+
+/* <div class="textBox"><p>You clicked</p><br><br><p>This many times.</p></div> */
+
+.title {
+    height: 200px;
+    width: 200px;
+    font-family: "American Typewriter";
+    font-size: 100px;
+    margin: 10px;
+    margin-left: 30px;
+    position: fixed;
+    bottom: 80%;
+
+}
+
+.textBox {
+    width: 150px;
+    height: 150px;
+    border: 5px solid grey;
+    background-color: darkgrey;
+    margin: 10px;
+    position: fixed;
+    top: 80%;
+}
+
+.hill1 {
+    background-color: green;
+    width: 100%;
+    height: 400px;
+    margin: unset;
+    position: fixed;
+    bottom: 0%;
+    border-top-right-radius: 1000px 250px;
+    border-top-left-radius: 500px 100px;
+
+}
+
+.hill2 {
+    background-color: lightgreen;
+    width: 100%;
+    height: 500px;
+    margin: unset;
+    position: fixed;
+    top: 50%;
+    border-top-right-radius: 300px 50px;
+    border-top-left-radius: 2000px 500px;
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
