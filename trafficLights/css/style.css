@@ -53,30 +53,30 @@ div.light:hover {
 
 .red {
     background-color: red;
-    background-image: radial-gradient(brown, transparent 40%);
+    background-image: radial-gradient(brown, transparent);
 }
 
 div.red:active {
     background-color: red;
-    background-image: radial-gradient(brown, transparent 40%);
+    background-image: radial-gradient(brown, transparent);
 }
 
 .yellow {
     background-color: yellow;
-    background-image: radial-gradient(orange, transparent 40%);
+    background-image: radial-gradient(orange, transparent);
 }
 
 div.yellow:active {
     background-color: yellow;
-    background-image: radial-gradient(orange, transparent 40%);
+    background-image: radial-gradient(orange, transparent);
 }
 
 .green {background-color: green;
-    background-image: radial-gradient(lime, transparent 40%);
+    background-image: radial-gradient(lime, transparent);
 }
 
 div.green:active {background-color: green;
-    background-image: radial-gradient(lime, transparent 40%);
+    background-image: radial-gradient(lime, transparent);
 }
 
 
