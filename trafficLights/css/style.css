@@ -1,7 +1,11 @@
+html {
+    height: 100%;
+}
+
 body {
     background-image: linear-gradient(#1687ED, #DBE2A9);
     background-repeat: no-repeat;
-    height: 1000px;
+    height: 100%;
     margin: unset;
 }
 
