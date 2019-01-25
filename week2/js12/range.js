@@ -4,7 +4,6 @@ const pickn = (a, n) => {
   const checkDoubles = [];
   const choices = [];
   for (let i = 0; i < n; i++) {
-    console.log('for the ' + i + 'th time');
     const pick = Math.floor(Math.random() * a.length);
     if (checkDoubles.length === a.length) {
       break;
@@ -25,7 +24,6 @@ const intRange = (low, high, step) => {
     newValue = newValue + step;
     integers.push(newValue);
   }
-  console.log(integers);
   return integers;
 };
 
