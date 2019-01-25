@@ -1,17 +1,17 @@
 'use strict';
 
 const pickn = (a, n) => {
-  const arrayCopy = [];
+  const checkDoubles = [];
   const choices = [];
   for (let i = 0; i < n; i++) {
     const pick = Math.floor(Math.random() * a.length);
-    if (arrayCopy.length === a.length) {
+    if (checkDoubles.length === a.length) {
       break;
-    }else if (arrayCopy.includes(a[pick]) === true) {
+    }else if (checkDoubles.includes(a[pick]) === true) {
       i--;
     }else {
       choices[i] = a[pick];
-      arrayCopy.push(a[pick]);
+      checkDoubles.push(a[pick]);
     }
 
   }
