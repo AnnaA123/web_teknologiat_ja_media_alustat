@@ -1,0 +1,62 @@
+html, body {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Open Sans', sans-serif;
+}
+
+
+/*classes*/
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    text-align: center;
+    background-color: #e9e9e9;
+}
+
+.header {
+    width: 100%;
+}
+
+.headerImg {
+}
+
+.title {
+    position: absolute;
+}
+
+.abt {
+    width: 66.6%;
+}
+
+.img1 {
+    width: 33.3%;
+}
+
+.trafficLights {
+    width: 50%;
+}
+
+.img2 {
+    width: 50%;
+}
+
+.animation {
+    width: 100%;
+}
+
+.smallimg {
+    height: 200px;
+    width: 200px;
+    object-fit: cover;
+}
+
+/* this one stays last */
+@media screen and (min-width: 900px) {
+    .container {
+        width: 800px;
+        margin: auto;
+    }
+}
