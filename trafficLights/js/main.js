@@ -12,7 +12,8 @@ const redCount = document.querySelector("#redCount");
 const yellowCount = document.querySelector("#yellowCount");
 const greenCount = document.querySelector("#greenCount");
 
-//"The colour is" segment is always gonna be rgb(0, 0, 0) (because the light goes out when you hover over it), but it does work
+//"The colour is" segment is always gonna be rgb(0, 0, 0) because the lights turn black when you hover over them, but it does work
+
 redLight.addEventListener('click', (evt) => {
   youClicked.innerHTML = 'You clicked the red lamp';
   theColour.innerHTML = 'The colour is ' + window.getComputedStyle(redLight, null).getPropertyValue('background-color');
