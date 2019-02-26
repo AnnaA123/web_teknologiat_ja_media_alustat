@@ -1,0 +1,153 @@
+body {
+    margin: 0px;
+    padding: 0px;
+}
+
+#stage {
+    background: url("stage.png");
+    width: 1280px;
+    height: 769px;
+}
+
+/* ================ DUCK ================ */
+.duck {
+    position: absolute;
+    top: 100px;
+    left: -100px;
+    background: url("sprite.png") 0 -230px;
+    width: 75px;
+    height: 70px;
+    transition: left 3s linear;
+
+}
+
+.duck1 {
+    animation: fly 0.5s steps(3) 24,
+    fly1 8s linear 1;
+}
+
+.duck2 {
+    top: 200px;
+    left: -100px;
+    animation: fly 0.5s 1s steps(3) infinite,
+    fly2 8s 1s linear 1;
+}
+
+.duck3 {
+    top: 20px;
+    animation: fly 0.5s 3s steps(3) infinite,
+    fly3 8s 3s linear 1;
+}
+
+
+/* ================ DOG ================ */
+.dog {
+    position: absolute;
+    top: 560px;
+    left: 10px;
+    background: url("sprite.png") 0 0;
+    width: 120px;
+    height: 110px;
+    transition: left 3s linear;
+
+    animation: doggowalk 0.5s steps(4) 6,
+    doggosniff 0.5s 3s steps(2) 6,
+    doggojump 1s 6s steps(3) 1,
+    doggolaugh 0.2s 7s steps(2) 20 alternate;
+    /*animation-name: doggowalk;
+    animation-duration: 4s;
+    animation-iteration-count: 1;*/
+
+}
+
+/* ================ ANIMATION ================ */
+
+.dogwalk {
+    left: 300px;
+}
+
+.duckfly {
+    left: 1200px;
+}
+
+.duckfall {
+    animation:
+    drop 0.5s steps(2) infinite;
+}
+
+.duckpause {
+    animation-play-state: paused;
+}
+
+@keyframes doggowalk {
+    from {
+        background-position: 0 0;
+    }
+    to {
+        background-position: -480px 0;
+    }
+}
+
+@keyframes doggosniff {
+    from {
+        background-position: -360px 0;
+    }
+    to {
+        background-position: -600px 0;
+    }
+}
+
+@keyframes doggojump {
+    from {
+        background-position: 0 -110px;
+    }
+    to {
+        background-position: -360px -110px;
+    }
+}
+
+@keyframes doggolaugh {
+    from {
+        background-position: -360px -110px;
+    }
+    to {
+        background-position: -600px -110px;
+    }
+}
+
+@keyframes fly {
+    from {
+        background-position: 0 -230px;
+    }
+    to {
+        background-position: -240px -230px;
+    }
+}
+
+@keyframes fly1  {
+    0% {left: -100px; top: 100px;}
+    100% {left: 1400px; top: 100px;}
+}
+
+@keyframes fly2  {
+    0% {left: -100px; top: 300px;}
+    25% {left: 400px; top: 500px;}
+    50% {left: 900px; top: 200px;}
+    100% {left: 1400px; top: 300px;}
+}
+
+@keyframes fly3  {
+    0% {left: -100px; top: 10px;}
+    50% {left: 700px; top: 100px;}
+    100% {left: 1400px; top: 10px;}
+}
+
+
+@keyframes falling {
+    100% {top: 700px}
+}
+
+@keyframes drop {
+    0% {background-position: 0px -470px;}
+    100% {background-position: -140px -470px;}
+}
