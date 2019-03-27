@@ -8,7 +8,7 @@ body {
 }
 
 
-/*classes*/
+/*============================classes============================*/
 .container {
     display: flex;
     flex-wrap: wrap;
@@ -18,35 +18,46 @@ body {
 
 .header {
     width: 100%;
+    position: relative;
+}
+
+#bgVid {
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: auto;
 }
 
 .headerImg {
+    width: 100%;
 }
 
 .title {
     text-align: center;
-    top: 350px;
-    background-color: #e9e9e9;
-    width: 800px;
+    top: 80%;
+    background-color: #e4e0fc;
+    width: 100%;
     position: absolute;
 }
 
 .abt {
     width: 66.6%;
-    background-color: #b1b8bc;
+    background-color: #e4e0fc;
 }
 
 .img1 {
     width: 33.3%;
-    background-color: #b1b8bc;
+    height: 100%;
+    background-color: #e4e0fc;
 }
 
-.trafficLights {
-    width: 50%;
+.sites {
+    width: 25%;
 }
 
-.img2 {
-    width: 50%;
+a {
+    text-decoration: none;
+    color: #d67de6;
 }
 
 .animation {
@@ -59,6 +70,144 @@ body {
     object-fit: cover;
 }
 
+.bottomImg {
+    width: 100%;
+    position: relative;
+}
+
+#cinemagraph {
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: auto;
+}
+
+/* ============================extra stuff============================ */
+
+.extraStuff {
+    height: 200px;
+    width: 100%;
+    flex: none;
+    background-image: linear-gradient(#1687ED, #DBE2A9);
+    position: relative;
+}
+
+.dog {
+    position: absolute;
+    background: url("sprite.png") 0 0;
+    width: 120px;
+    height: 110px;
+    position: absolute;
+    left: 35%;
+    top: 25%;
+}
+
+.fish {
+    position: absolute;
+    background-image: url("fish.png");
+    background-repeat: no-repeat;
+    width: 110px;
+    height: 100px;
+    position: absolute;
+    left: 80%;
+    top: 20%;
+    background-size: contain;
+    -webkit-transform: scaleX(-1);
+    transform: scaleX(-1);
+}
+
+.hill {
+    background-color: green;
+    width: 100%;
+    height: 100px;
+    margin: unset;
+    position: absolute;
+    bottom: 0;
+    border-top-right-radius: 1000px 250px;
+    border-top-left-radius: 500px 100px;
+
+}
+
+.sun {
+    width: 50px;
+    height: 50px;
+    border-radius: 75px;
+    position: absolute;
+    left: 50%;
+    right: 50%;
+    top: 30%;
+    background-color: orange;
+    background-image: radial-gradient(yellow, transparent);
+    -webkit-box-shadow: 0 0 100px 10px orange;
+    -moz-box-shadow:    0 0 100px 10px orange;
+    box-shadow:         0 0 100px 10px orange;
+}
+
+.balloon {
+    position: absolute;
+    left: 60%;
+    top: 10%;
+}
+
+/* ============================traffic lights lite============================ */
+
+.trafficLights {
+    width: 34px;
+    position: absolute;
+    left: 10%;
+    top: 5%;
+}
+
+.lights {
+    width: 30px;
+    height: 50px;
+    padding: 1px;
+    background: black;
+    border: 1px solid grey;
+    border-radius: 1px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+
+.light {
+    width: 16px;
+    height: 16px;
+    border-radius: 10px;
+    margin: auto;
+    -moz-box-shadow:    inset 0 0 10px black;
+    -webkit-box-shadow: inset 0 0 10px black;
+    box-shadow:         inset 0 0 10px black;
+}
+
+.red {
+    background-color: red;
+    background-image: radial-gradient(brown, transparent);
+    background-size: 3px 3px;
+}
+
+.yellow {
+    background-color: yellow;
+    background-image: radial-gradient(orange, transparent);
+    background-size: 3px 3px;
+}
+
+.green {background-color: green;
+    background-image: radial-gradient(lime, transparent);
+    background-size: 3px 3px;
+}
+
+.pole {
+    height: 80px;
+    width: 8px;
+    background-color: black;
+    position: relative;
+    margin-left: auto;
+    margin-right: auto;
+
+}
+
 /* this one stays last */
 @media screen and (min-width: 900px) {
     .container {
@@ -66,3 +215,4 @@ body {
         margin: auto;
     }
 }
+
